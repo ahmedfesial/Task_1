@@ -1,52 +1,112 @@
-
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: #eee;
 }
 
-
-
-.Boxs .Box1{
-    width: 20%;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 10px #ddd;
-} 
-.Boxs .Box1 .info{
-    padding-left: 20px;
-}
-img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.Boxs .Box2{
-    width: 20%;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 10px #ddd;
-} 
-.Boxs .Box2 .info{
-    padding-left: 20px;
-}
-.Boxs .Box3{
-    width: 20%;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 10px #ddd;
-} 
-.Boxs .Box3 .info{
-    padding-left: 20px;
+.Boxs .slider-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 92vh;
 }
 
-.Boxs .info span{
-    color: red;
+.Boxs #Box{
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0px  10px 15px 10px #888;
+  transition: opacity 1.5s;
+  opacity: 0;
+}
+.Boxs #Box.active{
+    opacity: 1;
+}
+
+.Boxs #Box .info{
+  padding-left: 20px;
+  height: 130px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Boxs .info span {
+  color: red;
 }
 
 .Boxs p{
-    color : #777;
-    text-transform: capitalize;    
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+  color: #777;
+  text-transform: capitalize;
 }
-.Boxs .text{
-    letter-spacing: 3px;
+
+.Boxs .text {
+  letter-spacing: 3px;
+}
+
+.slider-controls {
+  width: 800px;
+  margin: auto;
+}
+.slider-controls #back,
+.slider-controls #next {
+  background-color: rgb(208, 93, 93);
+  color: #fff;
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 100px;
+}
+
+.slider-controls #back {
+  float: left;
+}
+.slider-controls #next {
+  float: right;
+}
+
+.disabled{
+    cursor: no-drop;
+}
+
+
+.slider-controls .indicators{
+    width: 70%;
+    float: left;
+}
+
+
+.slider-controls .indicators ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+.slider-controls .indicators ul li{
+    display: inline-block;
+    background-color: #f6f6f6;
+    color: #777;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.slider-controls .indicators ul li.active{
+    background-color: rgb(208, 93, 93);
+    color: #fff;
 }

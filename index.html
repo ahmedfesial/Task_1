@@ -4,39 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Task_1</title>
   </head>
   <body>
     <div class="Boxs">
-        <div class="container">
-            <div class="Box1">
+        <div class="slider-container">
+              <div id="Box">
                 <img src="Photo/ben-garratt.jpg" alt="This Photo About Bread" />
                 <div class="info">
                   <p class="text">THUNDER</p>
                   <h3>Lorem, ipsum dolor.</h3>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  <h5>By : <span>Learing Robo</span></h5>
+                  <h3>By : <span>Learing Robo</span></h3>
                 </div>
               </div>
-              <div class="Box2">
+              <div id="Box">
                 <img src="Photo/clem-onojeghuo.jpg" alt="This Photo About Bread" />
                 <div class="info">
                   <p class="text">SUNSET</p>
                   <h3>Lorem, ipsum dolor.</h3>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  <h5>By : <span>Learing Robo</span></h5>
+                  <h3>By : <span>Learing Robo</span></h3>
                 </div>
               </div>
-              <div class="Box3">
+              <div id="Box">
                 <img src="Photo/ben-garratt.jpg" alt="This Photo About Bread" />
                 <div class="info">
                   <p class="text">TIGER</p>
                   <h3>Lorem, ipsum dolor.</h3>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  <h5>By : <span>Learing Robo</span></h5>
+                  <h3>By : <span>Learing Robo</span></h3>
                 </div>
               </div>
         </div>
     </div>
+    <div class="slider-controls">
+
+      <span   id="back"> <i class="fa-solid fa-arrow-left"></i> </span>
+
+      <span   id="indicators" class="indicators"></span>
+
+      <span   id="next" >  <i class="fa-solid fa-arrow-right"></i></span>
+
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
